@@ -1,4 +1,6 @@
 
+'use strict';
+
 var Task = require('./task');
 
 var task1 = new Task('Create a demo for constructors');
