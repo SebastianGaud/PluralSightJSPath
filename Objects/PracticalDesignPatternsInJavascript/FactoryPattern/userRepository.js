@@ -1,5 +1,11 @@
 'use strict';
 
+/** 
+ * 
+ * @method get(id)
+ * @method save(user)
+ * 
+*/
 class UserRepository {
     get(id){
         console.log('Getting user ' +  id);

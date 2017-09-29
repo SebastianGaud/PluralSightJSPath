@@ -1,24 +1,12 @@
 'use strict';
 
-var Task = require('../ModulePattern/task');
-var Repo = require('../ModulePattern/taskRepository');
+var RepositoryFactory = require('./RepositoryFactory');
 
-var task1 = new Task(Repo.get(1));
+var task1 = RepositoryFactory.task.get(1);
+var task2 = RepositoryFactory.task.get(2);
 
-var task2 = new Task( {
-    name: 'Create a demo for modules'
-});
+var user = RepositoryFactory.user.get(1);
+var user = RepositoryFactory.user.get(2);
 
-var task3 = new Task( {
-    name: 'Create a demo for Singletons'
-});
-
-var task4 = new Task( {
-    name: 'Create a demo for Prototypes'
-});
-
-
-task1.complete();
-task2.save();
-task3.save();
-task4.save();
+var project = RepositoryFactory.project.get(1);
+var project = RepositoryFactory.project.get(2);
