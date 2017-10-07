@@ -2,7 +2,8 @@
 
 var cat = {
     name: {first : 'Mila', last : 'Liberatore'},
-    color: 'White'
+    color: 'White',
+    age:12 
 }
 
 Object.defineProperty(cat, 'fullName',
@@ -15,8 +16,7 @@ Object.defineProperty(cat, 'fullName',
         set : function (value) {
             var nameParts = value.split('');
             this.name.first = nameParts[0];       
-            this.name.last = nameParts[1];       
+            this.name.last = nameParts[1];   
         }
     }
 )
-
